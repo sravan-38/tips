@@ -1,0 +1,18 @@
+Low or upper to upper
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+	char str[20];
+	int i;
+	printf("Enter any string->");
+	gets(str);
+	printf("The input string is->%s",str);
+	for(i=0;i<=strlen(str);i++){
+		if(str[i]>=97&&str[i]<=122)
+			str[i]=str[i]-32;
+
+	}
+	printf("\nThe converted string is->%s\n",str);
+ 	return 0;
+}
